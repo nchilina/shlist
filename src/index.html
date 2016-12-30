@@ -5,9 +5,13 @@
     <title>Title</title>
 </head>
 <body>
-  Project Template.
-  <div ng-controller="MainCtrl as ctrl">
-    {{ctrl.msg}}
+  <h1>Shopping List</h1>
+  <div ng-controller="ItemListCtrl as ctrl">
+    <div ng-repeat="item in ctrl.itemList">
+      <span ng-bind="item.name"></span>
+      <span ng-bind="item.store"></span>
+      <span ng-bind="item.dueDate | date: 'mediumDate'"></span>
+    </div>
   </div>
 
 

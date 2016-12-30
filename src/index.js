@@ -3,11 +3,10 @@
  */
 var angular = require('angular');
 
-var MainCtrl = require('./app/main');
+var ItemListCtrl = require('./app/ItemListCtrl');
 
 angular.module('app', [])
-  .controller('MainCtrl', [MainCtrl]);
+  .controller('ItemListCtrl', [ItemListCtrl]);
 
 
-console.log('JS Works !!!!!1111111111');
-console.log('JS Works !!!!!1111111111');
+
